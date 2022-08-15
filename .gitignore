@@ -1,0 +1,4 @@
+*.class
+
+### VS Code ###
+.vscode/
