@@ -6,8 +6,8 @@ public class App {
 
         PessoaFisica pf = (PessoaFisica) p1;
         PessoaJuridica pj = (PessoaJuridica) p2;
-        
+
         System.out.println("Pessoa Fisica: " + p1.getNome() + ", " + p1.getEndereco() + ", " + p1.getTelefone() + ", " + pf.getCPF());
         System.out.println("Pessoa Juridica: " + p2.getNome() + ", " + p2.getEndereco() + ", " + p2.getTelefone() + ", " + pj.getCNPJ());
     }
-}
+} 
