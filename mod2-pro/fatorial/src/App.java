@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
 
-        int entrada = 65;
+        int entrada = 25;
 
         long inicioRec = System.nanoTime();
         long rec = Fatorial.fatorialRecursivo(entrada);
