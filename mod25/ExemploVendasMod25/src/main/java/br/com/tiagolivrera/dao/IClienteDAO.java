@@ -15,5 +15,9 @@ public interface IClienteDAO {
     public Boolean salvar(Cliente cliente);
     
     public Cliente buscarPorCPF(Long cpf);
+
+    public void excluir(Long cpf);
+
+    public void alterar(Cliente cliente);
     
 }

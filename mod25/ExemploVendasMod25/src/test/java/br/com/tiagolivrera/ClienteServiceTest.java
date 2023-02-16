@@ -47,8 +47,19 @@ public class ClienteServiceTest {
     
     @Test
     public void salvarCliente() {
-        Boolean retorno = clienteService.salvar(cliente);
-        
+        Boolean retorno = clienteService.salvar(cliente);        
         Assert.assertTrue(retorno);
+    }
+    
+    @Test
+    public void alterarCliente(){
+        cliente.setNome("Thyago Freitas");
+        clienteService.alterar(cliente);
+        Assert.assertEquals("Thyago Freitas", cliente.getNome());
+    }
+    
+    @Test
+    public void excluirCliente(){
+        clienteService.excluir(cliente.getCpf());
     }
 }
