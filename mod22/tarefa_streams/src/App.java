@@ -1,5 +1,3 @@
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -11,7 +9,8 @@ public class App {
 
         System.out.print("Digite a quantidade de pessoas a serem inseridas: ");
         int pessoas = Integer.parseInt(System.console().readLine());
-        
+
+        System.out.println("Digite os dados da pessoa (Nome,Sexo). Exemplo: Maria,F");
         for (int i = 0; i < pessoas; i++) {
             lista.add(Pessoa.stringToPessoa(System.console().readLine()));
         }
